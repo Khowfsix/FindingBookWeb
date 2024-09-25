@@ -1,34 +1,62 @@
-# IR - DjangoWeb with ElasticSearch
+# Searching - Suggesting Book Website - DjangoWeb with ElasticSearch
 
-Đồ án cuối kỳ môn Infomation Retrieval
+Final Project for Information Retrieval
 
-## Elastic Search là gì
+**Description**: Build a bookstore management website integrated Search Engine using ElasticSearch.
+**Role**: Python developer.
+**Main Features:**
 
-Elasticsearch là một công cụ tìm kiếm và phân tích dữ liệu mã nguồn mở được xây dựng trên nền tảng Apache Lucene. Elasticsearch cho phép lưu trữ, tìm kiếm và phân tích các tài liệu có cấu trúc và không cấu trúc với tốc độ rất nhanh và khả năng mở rộng tuyệt vời.
+- Manage, display lists and details with book datasets collected from other bookstore websites.
+- Search by relevance of book title, book category, author,... with TFIDF algorithm.
+- Filter search results by price, number of pages, publication date and other information.
+- Suggest books related to the book you are viewing.
+- Autocomplete searching bar with relevant information.
 
-Nó được sử dụng rộng rãi trong các ứng dụng web, trong đó Elasticsearch thường được sử dụng để tìm kiếm và hiển thị các kết quả liên quan cho người dùng. Elasticsearch cũng là một thành phần chính trong hệ sinh thái của Elastic Stack, bao gồm các ứng dụng như Logstash, Kibana và Beats, để thu thập, xử lý và hiển thị dữ liệu log và các thông tin khác từ các hệ thống và ứng dụng.
+**Technologies:**
 
-## Django web là gì
+- Web application: Django, Bootstrap, SqlLite.
+- Data processing: Selenium, ElasticSearch, Kibana.
 
-Django là một framework phát triển web được viết bằng Python. Nó cung cấp cho các nhà phát triển một cách tiếp cận khá dễ dàng để phát triển các ứng dụng web phức tạp. Django bao gồm nhiều tính năng, bao gồm ORM (Object-Relational Mapping), hỗ trợ đa ngôn ngữ, hệ thống xử lý URL, xác thực và quản lý phiên và một số thành phần khác giúp việc phát triển ứng dụng web trở nên dễ dàng hơn. Nó cũng có cộng đồng phát triển mã nguồn mở rất lớn và có sẵn nhiều tài liệu và thư viện hỗ trợ cho việc phát triển.
+**Responsibilities:**
 
-Một số đặc điểm của Django bao gồm:
+- Scrape data from other bookstore websites to get data for analysis.
+- Analyze the scraped data and build totems analysis set, ranking set according to each data component.
+- Initiate the project and build a bookstore management website.
+- Implement the function of suggesting related books by each book and search feature.
 
-1. Mô hình MTV: Django xây dựng trên mô hình MTV (Model-Template-View), giúp tách biệt giữa dữ liệu, logic và giao diện người dùng.
-2. ORM: Django cung cấp một công cụ ORM (Object-Relational Mapping) để tương tác với cơ sở dữ liệu, giúp các nhà phát triển quản lý dữ liệu dễ dàng hơn.
-3. Hỗ trợ đa ngôn ngữ: Django hỗ trợ việc phát triển ứng dụng đa ngôn ngữ.
-4. Bảo mật: Django đã tích hợp sẵn các tính năng bảo mật như xác thực, phân quyền và chống CSRF (Cross-site request forgery).
-5. Cộng đồng phát triển mã nguồn mở: Django có cộng đồng phát triển lớn, vì vậy rất dễ dàng để tìm kiếm tài liệu và các thư viện hỗ trợ.
-6. Tích hợp dễ dàng với các công cụ khác: Django cho phép tích hợp dễ dàng với các công cụ khác như HTML, CSS, JavaScript, jQuery và Bootstrap.
+**Team:** 4 members.
 
-Django là một trong những framework phổ biến nhất trên thế giới và được sử dụng bởi nhiều công ty lớn để phát triển các ứng dụng web.
+## Elastic Search
 
-## Cách tích hợp Elastic search vào Django web
+Elasticsearch is an open source data search and analysis engine built on top of Apache Lucene. Elasticsearch allows storing, searching, and analyzing structured and unstructured documents at very high speed and with excellent scalability.
 
-Để tích hợp Elasticsearch vào Django web, có thể sử dụng một số thư viện phổ biến như elasticsearch-dsl và django-elasticsearch-dsl. Các bước cơ bản để tích hợp Elasticsearch vào Django web như sau:
+It is widely used in web applications, where Elasticsearch is often used to search and display relevant results to users. Elasticsearch is also a key component of the Elastic Stack ecosystem, which includes applications such as Logstash, Kibana, and Beats, to collect, process, and display log data and other information from systems and applications.
 
-1. Cài đặt *Elasticsearch*: Để sử dụng *Elasticsearch* với Django, trước tiên cần cài đặt Elasticsearch. Elasticsearch có thể được cài đặt trên nhiều hệ điều hành khác nhau và phiên bản mới nhất có thể được tìm thấy trên trang web chính thức của Elasticsearch.
-2. Cài đặt *elasticsearch-dsl* và *django-elasticsearch-dsl*: Hai thư viện này cung cấp các lớp xây dựng và công cụ để tương tác với Elasticsearch trong Django.
+## What is Django web
+
+Django is a web development framework written in Python. It provides developers with a fairly easy approach to developing complex web applications. Django includes many features, including ORM (Object-Relational Mapping), multi-language support, URL handling system, authentication and session management, and several other components that make developing web applications easier. It also has a large open-source development community and has a lot of documentation and libraries available to support development.
+
+Some of the features of Django include:
+
+1. MTV model: Django is built on the MTV (Model-Template-View) model, which helps separate data, logic, and user interface.
+
+2. ORM: Django provides an ORM (Object-Relational Mapping) tool to interact with the database, making it easier for developers to manage data.
+3. Multilingual Support: Django supports multilingual application development.
+
+4. Security: Django has built-in security features such as authentication, authorization, and anti-CSRF (Cross-site request forgery).
+
+5. Open source development community: Django has a large development community, so it is easy to find documentation and support libraries.
+
+6. Easy integration with other tools: Django allows easy integration with other tools such as HTML, CSS, JavaScript, jQuery, and Bootstrap.
+
+Django is one of the most popular frameworks in the world and is used by many large companies to develop web applications.
+
+## How to integrate Elastic search into Django web
+
+To integrate Elasticsearch into Django web, you can use some popular libraries such as elasticsearch-dsl and django-elasticsearch-dsl. The basic steps to integrate Elasticsearch into Django web are as follows:
+
+1. Install *Elasticsearch*: To use *Elasticsearch* with Django, you first need to install Elasticsearch. Elasticsearch can be installed on many different operating systems and the latest version can be found on the official Elasticsearch website.
+2. Install *elasticsearch-dsl* and *django-elasticsearch-dsl*: These two libraries provide the build classes and tools to interact with Elasticsearch in Django.
 
 ```bash
 pip install elasticsearch-dsl
@@ -36,7 +64,7 @@ pip install django-elasticsearch-dsl
 
 ```
 
-3. Thiết lập kết nối với Elasticsearch: Trong *[settings.py](http://settings.py/)* của ứng dụng Django, cần thiết lập kết nối với Elasticsearch. Ví dụ:
+3. Set up connection to Elasticsearch: In *[settings.py](http://settings.py/)* of Django application, need to set up connection to Elasticsearch. For example:
 
 ```python
 ELASTICSEARCH_DSL = {
@@ -46,7 +74,7 @@ ELASTICSEARCH_DSL = {
 }
 ```
 
-4. Định nghĩa các model Elasticsearch: Tạo các lớp Elasticsearch Model với các thuộc tính để mapping với các field trong model của Django.
+4. Define Elasticsearch models: Create Elasticsearch Model classes with properties to map to fields in Django models.
 
 ```python
 from django_elasticsearch_dsl import Document
@@ -73,6 +101,6 @@ class BookDocument(Document):
 
 ```
 
-5. Tạo các View và Search: Tạo các view và search queries để tìm kiếm và hiển thị kết quả từ Elasticsearch.
+5. Create Views and Search: Create views and search queries to search and display results from Elasticsearch.
 
-Đó là một số bước cơ bản để tích hợp Elasticsearch vào Django web. Việc tích hợp này sẽ giúp tăng tốc độ tìm kiếm và phân tích dữ liệu của ứng dụng web của bạn.
+These are some basic steps to integrate Elasticsearch into Django web. This integration will help speed up the search and data analysis of your web application.
