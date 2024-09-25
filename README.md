@@ -3,7 +3,9 @@
 Final Project for Information Retrieval
 
 **Description**: Build a bookstore management website integrated Search Engine using ElasticSearch.
+
 **Role**: Python developer.
+
 **Main Features:**
 
 - Manage, display lists and details with book datasets collected from other bookstore websites.
